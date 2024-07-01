@@ -46,11 +46,12 @@
 
 
 
+
 name: Upload APK in Releases
 on:
   push:
     branches:
-      - 'main'
+      - master
 
 jobs:
   apk:
