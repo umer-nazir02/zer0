@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Install npm dependencies
         run: |
-          yarn
+          npm install --save react-native-svg-charts --legacy-peer-deps
       - name: Build Android Release
         run: |
           cd android && .gradlew clean && ./gradlew assembleRelease
