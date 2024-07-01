@@ -21,7 +21,7 @@ jobs:
           npm install --save react-native-svg-charts --legacy-peer-deps
       - name: Build Android Release
         run: |
-          cd android && .gradlew clean && ./gradlew assembleRelease
+          cd android && ./gradlew clean && ./gradlew assembleRelease
       - name: Upload Artifact
         uses: actions/upload-artifact@v1
         with:
